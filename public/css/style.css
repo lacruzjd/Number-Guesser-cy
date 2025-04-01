@@ -1,0 +1,142 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(208, 68, 68);
+    margin: 0 40px;
+}
+
+header {
+    text-align: center;
+    margin: 1rem;
+}
+
+
+main {
+    display: grid;
+    grid-template-rows: 100px auto auto;
+}
+
+
+#raund {
+    background-color: antiquewhite;
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+}
+
+button:hover {
+    background-color: rgb(127, 255, 242);
+    cursor: pointer;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(0, 255, 170);
+    border: none;
+    border-radius: 10px;
+}
+
+#players {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    width: 100%;
+}
+
+#computer,
+#human,
+#raund,
+#instructions {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#human,
+#computer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+
+#human h2,
+#computer h2 {
+    margin-bottom: 20px;
+
+}
+
+.score p,
+#raund p {
+    margin-bottom: 20px;
+    color: blueviolet;
+    font-size: 2rem;
+}
+
+.guess p,
+#human input {
+    width: 80px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    color: rgb(226, 43, 43);
+    font-size: 3rem;
+    text-align: center;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.computer {
+    background-color: rgb(152, 158, 179);
+}
+
+.human {
+    background-color: rgb(178, 190, 119);
+}
+
+#instructions {
+    background-color: rgb(135, 204, 238);
+    grid-row-start: 3;
+    display: flex;
+
+}
+
+#instructions article {
+    margin: 10px;
+}
+
+.win {
+    background-color: aquamarine;
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .guess p,
+    #human input {
+        width: 40px;
+    }
+
+    #instructions {
+        flex-direction: column;
+
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script defer type="module" src="./public/js/interfaz.js"></script>
+    <script defer type="module" src="./public/js/script.js"></script>
+    <title>Number Guesser</title>
+</head>
+
+<body>
+    <header>
+        <h1>Number Guesser</h1>
+    </header>
+    <main>
+        <section id="raund">
+            <article class="raund">
+                <h2>Raund</h2>
+                <p>0</p>
+            </article>
+            <article id="target-number">
+                <h2>Target Number</h2>
+                <p>?</p>
+            </article>
+            <button>Next Raund</button>
+        </section>
+        <section id="players">
+            <article id="computer" class="computer">
+                <h2>Computer</h2>
+                <section class="score">
+                    <h3>Score</h3>
+                    <p>0</p>
+                </section>
+                <section class="guess">
+                    <p>0</p>
+                </section>
+            </article>
+            <article id="human" class="human">
+                <h2>You</h2>
+                <section class="score">
+                    <h3>Score</h3>
+                    <p>0</p>
+                </section>
+                <section class="guess">
+                    <input type="number" name="" id="" value="0" min="0" max="9">
+                    <button>Make a Guess</button>
+                </section>
+            </article>
+        </section>
+
+        <section id="instructions">
+            <article class="instruction">
+                <h3>Step 1</h3>
+                <p>Input a number between 0 and 9</p>
+            </article>
+            <article class="instruction">
+                <h3>Step 2</h3>
+                <p>Click "Make a Guess" to submit your guess and see who won the round.</p>
+            </article>
+            <article class="instruction">
+                <h3>Step 3</h3>
+                <p>Click "Next Round" to play again.</p>
+            </article>
+        </section>
+
+    </main>
+</body>
+
+</html>
